@@ -1,0 +1,89 @@
+@import '../styles/fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 98%;
+
+  --primary: 167 77% 47%;
+  --primary-foreground: 0 0% 98%;
+
+  --secondary: 0 1% 28%;
+  --secondary-foreground: 0 0% 98%;
+}
+
+body {
+  font-family: 'HelveticaNowDisplay-Regular', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+h1, h2, h3, h4 {
+  font-family: 'NeueMachina-Bold', sans-serif;
+}
+
+.neue-light {
+  font-family: 'NeueMachina-Light', sans-serif;
+}
+
+.neue-regular {
+  font-family: 'NeueMachina-Regular', sans-serif;
+}
+
+.neue-bold {
+  font-family: 'NeueMachina-Bold', sans-serif;
+}
+
+.helvetica-light {
+  font-family: 'HelveticaNowDisplay-Light', sans-serif;
+}
+
+.helvetica-regular {
+  font-family: 'HelveticaNowDisplay-Regular', sans-serif;
+}
+
+.helvetica-medium {
+  font-family: 'HelveticaNowDisplay-Medium', sans-serif;
+}
+
+.helvetica-bold {
+  font-family: 'HelveticaNowDisplay-Bold', sans-serif;
+}
+
+.helvetica-extrabold {
+  font-family: 'HelveticaNowDisplay-ExtraBold', sans-serif;
+}
+
+.highlight-text {
+  color: hsl(var(--primary));
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.marquee-banner {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #24CCA6;
+  color: #000;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
